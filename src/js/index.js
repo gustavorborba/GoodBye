@@ -16,9 +16,15 @@ let Index = (function() {
     }
 
     function getLeftMargin(){
-      var num = Math.floor(Math.random() * 1800);
+      var num = 0;
+      if(Math.floor(Math.random() * 2) ==  1){
+         num = Math.floor(Math.random() * 600);
+      }else{
+        num = Math.floor(Math.random() * 600) +1200;
+      }
       return num;
     }
+
 
     function randomMessage(){
       var messages = ["Te odeio.", "Me obrigue.", "Não mente pra mim.", "mau carater.", "MEDO.", "Vamo colocar fogo no Kauer.", "Benetti Polones"];
