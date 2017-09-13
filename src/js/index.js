@@ -6,7 +6,7 @@ let Index = (function() {
     }
 
     function randomPlace(){
-      var num = Math.floor(Math.random() * 800);
+      var num = Math.floor(Math.random()*document.body.clientHeight);
       return num;
     }
 
@@ -16,18 +16,14 @@ let Index = (function() {
     }
 
     function getLeftMargin(){
-      var num = 0;
-      if(Math.floor(Math.random() * 2) ==  1){
-         num = Math.floor(Math.random() * 600);
-      }else{
-        num = Math.floor(Math.random() * 600) +1200;
-      }
+      var num = Math.floor(Math.random()*document.body.clientWidth -50);
       return num;
     }
 
 
     function randomMessage(){
-      var messages = ["Te odeio.", "Me obrigue.", "Não mente pra mim.", "mau carater.", "MEDO.", "Vamo colocar fogo no Kauer.", "Benetti Polones"];
+      var messages = ["Te odeio", "Me obrigue", "Não mente pra mim", "Mau carater",
+                    "#MEDO", "Vamo colocar fogo no Kauer", "Benetti Polones"];
 
       var message = messages[randomArrayPosition()];
 
