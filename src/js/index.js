@@ -23,7 +23,9 @@ let Index = (function() {
 
     function randomMessage(){
       var messages = ["Te odeio", "Me obrigue", "Não mente pra mim", "Mau carater",
-                    "#MEDO", "Vamo colocar fogo no Kauer", "Benetti Polones"];
+                    "#MEDO", "Vamo colocar fogo no Kauer", "Benetti Polones",
+                    "Vamos pegar uma sala pra sair no soco", "Fica calmo", "Mideixa em pais",
+                    "Não aguento mais"];
 
       var message = messages[randomArrayPosition()];
 
