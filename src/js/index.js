@@ -3,6 +3,7 @@ let Index = (function() {
     function init() {
         Timer.start();
         this.randomMessage();
+        configureKonamiCode();
     }
 
     function randomPlace(){
@@ -11,7 +12,7 @@ let Index = (function() {
     }
 
     function randomArrayPosition(){
-      var num = Math.floor(Math.random() * 7);
+      var num = Math.floor(Math.random() * 11);
       return num;
     }
 
@@ -39,7 +40,11 @@ let Index = (function() {
         randomMessage();
       }, 2000);
     }
-
+    function configureKonamiCode() {
+        new KonamiCode(function () {
+            Answer.cheat();
+        });
+    }
     return {
         init,
         randomMessage
