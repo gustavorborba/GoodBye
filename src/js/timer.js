@@ -15,8 +15,8 @@ let Timer = (function () {
          let countDownDate = new Date();
          countDownDate.setMonth(9);
          countDownDate.setDate(13);
-         countDownDate.setHours(17);
-         countDownDate.setMinutes(0);
+         countDownDate.setHours(11);
+         countDownDate.setMinutes(30);
          countDownDate.setSeconds(0);
          return countDownDate.getTime();
      }
